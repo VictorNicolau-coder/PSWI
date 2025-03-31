@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Document</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body{
+            margin: 0px;
+        }
+
+        .principal{
+            height: 100vh;
+            background-color: coral;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .esquerda{
+            width: 40%;
+        }
+
+        .direita {
+            width: 30%;
+        }
+
+        .direita form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: center;
+        }
+
+        @media (max-width: 800px){
+            .esquerda{
+                width: 50%;
+            }
+
+            .esquerda h1{ font-size: 120%; }
+
+            .esquerda p{ font-size: 70%; }
+
+            .direita {
+                width: 40%;
+            }
+
+            .direita form{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="principal">
+        <div class="esquerda">
+            <h1>Bem vindo ao sistema de grupo de estudo</h1>
+            <p>Encontre grupos para buscar objetivos em conjunto, realizar reunioes, trocar materiais e muitas outras interações.</p>
+        </div>
+        <div class="direita">
+            <form>
+                <input type="text" placeholder="Maria Barros">
+                <input type="email" placeholder="maria.barros@gmail.com">
+                <input type="password" placeholder="123456">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
