@@ -12,19 +12,27 @@
 
         .principal{
             height: 100vh;
-            background-color: coral;
+
+            background-image: url("lofi-gif-6.gif");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
         }
 
-        .esquerda{
-            width: 600px;
-        }
+        .esquerda{ width: 425px; }
 
-        .direita {
-            width: 300px;
+        .esquerda h1{ font-size: 200%; }
+
+        .esquerda p{ font-size: 100%; }
+
+        .direita { 
+            text-align: center;
+            width: 325px;
         }
 
         .direita form{
@@ -34,18 +42,30 @@
             justify-content: center;
         }
 
-        @media (max-width: 1220px){
-            .esquerda{
-                width: 50%;
+        .direita input{ margin: 2px; }
+
+        .direita .button_form{ 
+            width: 60%;
+            align-self: center;
+        }
+
+        @media (max-width: 780px){
+            .principal{
+                background-position: 70%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
-            .esquerda h1{ font-size: 120%; }
+            .esquerda{ width: 90%; }
+
+            .esquerda h1{ font-size: 130%; }
 
             .esquerda p{ font-size: 70%; }
 
-            .direita {
-                width: 40%;
-            }
+            .direita { width: 90%; }
 
             .direita form{
                 display: flex;
@@ -64,10 +84,13 @@
         </div>
         <div class="direita">
             <form>
+                <h2>Cadastre-se</h2>
                 <input type="text" placeholder="Maria Barros">
                 <input type="email" placeholder="maria.barros@gmail.com">
                 <input type="password" placeholder="123456">
-            </form>
+                <input class="button_form" type="button" value="Enviar">
+                <a>Já tem login? Entrar</a>
+            </form> 
         </div>
     </div>
 </body>
